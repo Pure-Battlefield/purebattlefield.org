@@ -47,40 +47,6 @@
 
 	======================================================================================================================== */
 
-	add_action('init', 'portfolio_register');
-
-	function project_register() {
-
-		$labels = array(
-			'name' =&gt; _x('Community Projects', 'post type general name'),
-			'singular_name' =&gt; _x('Community Project', 'post type singular name'),
-			'add_new' =&gt; _x('Add New', 'community project'),
-			'add_new_item' =&gt; __('Add New Community Event'),
-			'edit_item' =&gt; __('Edit Community Event'),
-			'new_item' =&gt; __('New Community Event'),
-			'view_item' =&gt; __('View Community Event'),
-			'search_item' =&gt; __('Search Community Events'),
-			'not_found' =&gt; __('Nothing Found'),
-			'not_found_in_trash' =&gt; __('Nothing found in Trash'),
-			'parent_item_colon' =&gt; ''
-		);
-
-		$args = array(
-			'labels' =&gt; $labels,
-			'public' =&gt; true,
-			'publicly_queryable' =&gt; true,
-			'show_ui' =&gt; true,
-			'query_var' =&gt; true,
-			'menu_icon' =&gt; get_stylesheet_directory_uri() . '/article16.png',
-			'rewrite' =&gt; true,
-			'capability_type' =&gt; 'post',
-			'hierarchical' =&gt; false,
-			'menu_position' =&gt; null,
-			'supports' =&gt; array('title', 'editor', 'thumbnail')
-		);
-
-		register_post_type( 'project' , $args );
-	}
 
 	/* ========================================================================================================================
 
