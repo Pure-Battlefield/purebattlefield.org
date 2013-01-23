@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row page">
   <nav class="top-bar">
     <ul>
       <!-- Title Area -->
