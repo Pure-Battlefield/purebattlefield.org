@@ -1,81 +1,56 @@
-// Post
-article {
-
-    time {
-        font-weight: 400;
-        font-style: italic;
-        font-size: 14px;
-        letter-spacing: 2px;
-        text-indent: 0px;
-        line-height: 30px;
-    }
-
-    blockquote {
-        margin-bottom: 25px;
-        margin-top: 25px;
-        font-size: 26px;
-        line-height: 50px;
-        font-style: italic;
-        font-weight: 600;
-        text-align: left;
-        text-indent: 16px;
-    }
-
-    h1 a:link {
-        color: #3295FF;
-        text-decoration: none;
-    }
-
-    h1 a:visited {
-        color: #3295FF;
-    }
-
-    h1 a:hover {
-        text-decoration: none;
-        color: #005DC1;
-    }
-
-    h1 {
-        font-size: 63px;
-        line-height: 80px;
-        margin-bottom: 25px;
-        font-style: normal;
-        font-weight: 700;
-        font-family: Ubuntu;
-    }
-
-    h2 {
-        margin-top: 50px;
-        margin-bottom: 25px;
-        font-size: 30px;
-        line-height: 25px;
-        letter-spacing: 2px;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    p {
-        margin-bottom: 0px;
-        text-indent: 16px;
-        line-height: 26px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    p.author {
-        text-indent: 0px;
-        margin-bottom: 25px;
-        font-size: 14px;
-        letter-spacing: 1px;
-        color: #666464;
-    }
-
-    p.first {
-        text-indent: 0px;
-    }
+// Header
+.button {
+    color: #000;
+}
+.top-bar ul.button-group {
+    margin-right: 15px;
 }
 
+
+// Front Page
+.page {
+    background: #E7E7E2;
+    width: 100%;
+}
+.slider {
+    max-width: 600px;
+}
+.news {
+    ul {
+        list-style-type: none;
+        line-height: 3.5em;
+    }
+    h3 {
+        -moz-transform: scale(1) rotate(-25deg) translateX(1px) translateY(1px) skewX(0deg) skewY(0deg);
+        -webkit-transform: scale(1) rotate(-25deg) translateX(1px) translateY(1px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(-25deg) translateX(1px) translateY(1px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(-25deg) translateX(1px) translateY(1px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(-25deg) translateX(1px) translateY(1px) skewX(0deg) skewY(0deg);
+        color: #CE0000;
+        text-align: center;
+        margin-top: 80px;
+        z-index: 1;
+    }
+}
+.servers {
+    div {
+        text-align: center;
+        &:last-child a {
+            margin-bottom: 10px;
+        }
+    }
+}
+.bot {
+    .panel {
+        min-height: 210px;
+    }
+    div {
+        &:first-child {
+            text-align: center;
+        }
+    }
+}
 footer {
     text-align: center;
+    margin: 15px;
 }
