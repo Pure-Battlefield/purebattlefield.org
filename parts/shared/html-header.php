@@ -17,6 +17,23 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+
+		<script src="http://modeconkey.com/minecraft/ext/js/jquery.foundation.navigation.js"></script>
+		<script src="http://modeconkey.com/minecraft/ext/js/jquery.foundation.orbit.js"></script>
+		<script src="http://modeconkey.com/minecraft/ext/js/jquery.foundation.topbar.js"></script>
+
+		<script type="text/javascript">
+		$(window).load(function() {
+	       $(".slider").orbit({
+		       	animation: 'fade',
+		       	animationSpeed: 1000,
+		       	timer: true,
+		       	directionalNav: false,
+		       	advanceSpeed: 5000
+	       });
+	   	});
+	</script>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
